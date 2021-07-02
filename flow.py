@@ -15,14 +15,12 @@ class Flow:
 
     def add_async(self, *tasks) -> None:
         self.__flow[self.__count] = {
-            "async": True,
             "tasks": tasks
         }
         self.__count += 10
 
     def add_infinit(self, *tasks) -> None:
         self.__flow[self.__count] = {
-            "async": True,
             "infin": True,
             "tasks": tasks
         }
@@ -64,14 +62,12 @@ class AsyncFlow:
 
     def add_async(self, *tasks) -> None:
         self.__flow[self.__count] = {
-            "async": True,
             "tasks": tasks
         }
         self.__count += 10
 
     def add_infinit(self, *tasks) -> None:
         self.__flow[self.__count] = {
-            "async": True,
             "infin": True,
             "tasks": tasks
         }
